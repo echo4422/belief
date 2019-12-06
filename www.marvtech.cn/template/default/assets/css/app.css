@@ -1335,11 +1335,11 @@ white-space: nowrap;
     background:#fe0000;
     padding:10px 0;
     line-height:25px;
-    color:#000;
+    color:#fff;
     font-size:16px
 }
 .page-position a {
-    color:#000
+    color:#fff
 }
 .page-position a:hover {
     text-decoration:underline
@@ -1365,7 +1365,7 @@ white-space: nowrap;
     background:#fe0000
 }
 .xypg-left-title span {
-    color:#000
+    color:#fff
 }
 .xypg-left-title span:after {
     margin-left:.5em
@@ -1379,7 +1379,7 @@ white-space: nowrap;
     vertical-align:middle;
     width:1.5em;
     height:1px;
-    background:#000
+    background:#fff
 }
 @media (max-width:990px) {
     .xypg-left-title {
@@ -1620,7 +1620,7 @@ white-space: nowrap;
     content:"\E638"
 }
 .xypg-left-nav>li.clicked>a,.xypg-left-nav>li:hover>a {
-    color:#000;
+    color:#fff;
     background:#fe0000
 }
 .xypg-left-nav>li.clicked .first-nav-btn,.xypg-left-nav>li:hover .first-nav-btn {
