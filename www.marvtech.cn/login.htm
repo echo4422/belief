@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>后台登录-祥云平台</title>
+    <link rel="shortcut icon" type="image/x-icon" href="http://www.marvtech.cn/dm/xycms/images/xiangyun.ico" />
+    <link type="text/css" rel="stylesheet" href="dm/xycms/css/app.css"  />
+    <link rel="stylesheet" type="text/css" href="../at.alicdn.com/t/font_600798_psy6mpu835a.css" >
+    <link href="dm/xycms/css/login.css"  rel="stylesheet" type="text/css"/>
+    <script type='text/javascript' src="dm/xycms/js/app.js" ></script>
+</head>
+</html>
+<body>
+    <div class="login-error"><img src="dm/xycms/images/notice.png" />密码连续累计出错超过5次，90秒后才能重新登陆！</div>
+
+    <div class="xydm-login" id="login-view">
+        <div class="xydm-login-wrap">
+            <div class="xydm-login-logo"><img src="dm/xycms/images/login-logo.png" ></div>
+            <div class="xydm-login-title">欢迎使用祥云平台<span>祥云平台 - 关注企业未来</span></div>
+                        <form action="" method="post">
+                <input type="hidden" name="action" value="loginpost"/>
+                <div class="xydm-login-input">
+                    <i class="iconfont icon-yonghu3"></i>
+                    <input type="text" class="login-input" name="username" id="username" autocomplete="off" placeholder="请输入账号" required="required" autofocus>
+                </div>
+                <div class="xydm-login-input">
+                    <i class="iconfont icon-ziyuan1"></i>
+                    <input type="password" class="login-input" name="password" id="password" autocomplete="off" placeholder="请输入密码" required>
+                </div>
+                <div class="xydm-Code-input">
+                    <div class="xydm-login-input">
+                        <i class="iconfont icon-ecurityCode"></i>
+                        <input class="code login-input" id="checkcode" maxlength="4" name="checkcode" type="text" autocomplete="off"
+                               placeholder="请输入验证码" required/>
+                    </div>
+                    <div class="xydm-Code-img">
+                        <img id="checkCodeImg" onclick="refreshCc()" src="data/include/imagecode.php-act=verifycode.jpg"  />
+                    </div>
+                </div>
+                <div class="xydm-login-remmber">
+                    <div class="rem-user"><input type="checkbox" id="remUser"> <label for="remUser">记住此账号</label></div>
+                    <a href="#" class="forget-pwd">忘记密码？</a>
+                </div>
+                <div class="xydm-login-btn">
+                    <button class="sub-btn" type="submit">登 录</button>
+                </div>
+            </form>
+            <div class="xylogin-copyright">Copyright  © 2018 祥云平台</div>
+        </div>
+    </div>
+</body>
+
+<script language="javascript" type="text/javascript">
+    var notice = '';
+    if (notice == 'error') {
+        $(".login-error").css('display', 'block');
+        $(".login-error").addClass('animated fadeInDownBig');
+        setTimeout(function () {
+            $(".login-error").removeClass('animated fadeInDownBig').addClass('animated bounceOutLeft');
+        }, 4000);
+    }
+    function refreshCc() {
+        var ccImg = document.getElementById("checkCodeImg");
+        if (ccImg) {
+            ccImg.src = 'http://www.marvtech.cn/data/include/imagecode.php?act=verifycode&random=' + Math.random();
+        }
+    }
+
+    var view = document.getElementById("login-view");
+    view.style.height = document.documentElement.clientHeight + 'px';
+    window.onresize = function(){
+        view.style.height = document.documentElement.clientHeight + 'px';
+    }
+
+    $('.login-input').focus(function(){
+        $(this).parent('.xydm-login-input').addClass('active');
+    });
+
+    $('.login-input').blur(function(){
+        $(this).parent('.xydm-login-input').removeClass('active');
+    });
+</script>
+
