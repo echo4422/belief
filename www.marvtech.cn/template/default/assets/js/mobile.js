@@ -1,0 +1,1 @@
+var isResponse=function(){if(navigator.userAgent.match(/(iPhone|iPod|Android|ios)/i)){var o=location.pathname,e=o.split("/"),a="";if(M_URL.match(e[1])){for(i=2;i<e.length;i++)a=a+"/"+e[i];a=M_URL+a}else a=M_URL+o.substr(1);"undefined"!=typeof about_cid&&27==about_cid&&(a=a.replace("/about/","/about_about/")),location.replace(a)}};isResponse();
