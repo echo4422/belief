@@ -1624,7 +1624,7 @@ white-space: nowrap;
     background:#fe0000
 }
 .xypg-left-nav>li.clicked .first-nav-btn,.xypg-left-nav>li:hover .first-nav-btn {
-    color:#000
+    color:#fff
 }
 .xypg-left-nav .xypg-left-subnav {
     display:none;
