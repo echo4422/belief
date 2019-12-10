@@ -376,14 +376,14 @@ p {
 
 .picScroll-left1 .bd ul li .wz h3 {
 	font: normal 16px/30px "微软雅黑";
-	color: #000400;
+	color: #fff;
 	text-align: center;
 	margin-bottom: 5px;
 }
 
 .picScroll-left1 .bd ul li .wz .info {
 	font-size: 12px;
-	color: #000000;
+	color: #fff;
 	line-height: 18px;
 	height: 54px;
 	overflow: hidden;
@@ -502,7 +502,7 @@ p {
 }
 
 .c3-con .xww li h3:hover a {
-	color: #cc7b58;
+	color: #EF0000;
 }
 
 .c3-con .xw02 {
@@ -521,7 +521,7 @@ p {
 }
 
 .c3-con .xww2 li:hover a {
-	color: #cc7b58;
+	color: #EF0000;
 }
 
 .c3-con .xww3 li {
@@ -540,7 +540,7 @@ p {
 }
 
 .c3-con .xww3 li h3:hover a {
-	color: #cc7b58;
+	color: #EF0000;
 }
 
 .c3-con .xww3 li .summ {
@@ -589,7 +589,7 @@ p {
 
 .c4-left .abouttlt p {
 	font: normal 13px/30px "微软雅黑";
-	color: #f09027;
+	color: #EF0000;
 	font-style: italic;
 	text-transform: uppercase;
 }
@@ -618,9 +618,9 @@ p {
 }
 
 .c4-left a.ckgd:hover {
-	background: #c35f2c;
+	background: #EF0000;
 	color: #fff;
-	border-color: #c35f2c;
+	border-color: #EF0000;
 }
 
 .c4-con .c4-right .sp {
@@ -819,7 +819,7 @@ p {
 
 .page-product-detail-effect .product-detail-slick .slick-arrow {
 	position: absolute;
-	z-index: 9999;
+	z-index: 999;
 	border: none;
 	outline: none;
 	font-size: 0px;
@@ -886,7 +886,7 @@ p {
 
 .img-box {
 	position: absolute;
-	z-index: 99999;
+	z-index: 999;
 	width: 247px;
 	height: 26px;
 	left: 0px;
